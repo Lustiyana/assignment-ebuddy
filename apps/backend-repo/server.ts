@@ -13,8 +13,8 @@ app.use(cors());
 
 app.use("/", authMiddleware, routes);
 
-// export const api = onRequest(app)
+export const api = onRequest(app)
 
-app.listen(8080, () => {
-    console.log(`🚀 Server running on http://localhost:8080`);
-});
+// app.listen(4000, () => {
+//     console.log(`🚀 Server running on http://localhost:4000`);
+// });

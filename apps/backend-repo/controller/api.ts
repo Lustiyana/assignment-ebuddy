@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 import { addRatingsCollection, createNewUser, getUserData, getUserDataById, updateRecentlyActive } from "../repository/userCollection";
 import { DocumentSnapshot } from "firebase-admin/firestore";
 import { convertIsoDateToUnixAndFormat } from "../libs/convertIsoDateToUnixAndFormat";
-import { TDataUser } from "@shared/interfaces"
+import { TDataUser } from "@shared/interfaces/user"
 
 
 export const registerUser = async (req: Request, res: Response): Promise<void> => {
